@@ -5,7 +5,7 @@ import bgvideo from '../assets/bgvideo.mp4';
 
 const Home = () => {
   return (
-    <div className='relative w-full h-screen overflow-hidden' id="Home">
+    <div className='relative w-full sm:h-auto md:h-screen lg:h-screen overflow-hidden' id="Home">
       <video
         autoPlay
         loop

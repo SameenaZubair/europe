@@ -26,7 +26,7 @@ const slides = [
 
 const Destination = () => {
   return (
-    <div className="relative w-full h-screen" id="Destination">
+    <div className="relative w-full h-screen overflow-y-auto h-100vh" id="Destination">
       <img src={bgcover} alt="Background" className="w-full h-full object-cover blur-sm absolute -z-10" />
       <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
         <Carousel

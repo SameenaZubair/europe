@@ -3,12 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://sameenazubair.github.io/europe",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
-    },
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
@@ -21,7 +24,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-scroll": "^1.9.0",
     "react-slick": "^0.30.2",
-    "slick-carousel": "^1.8.1", 
+    "slick-carousel": "^1.8.1",
     "swiper": "^11.1.4"
   },
   "devDependencies": {

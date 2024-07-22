@@ -47,7 +47,7 @@ const ReviewSlider = () => {
 
 
   return (
-    <div className="w-screen bg-gradient-to-b from-teal-700 to-teal-500 h-screen mx-auto p-4  ">
+    <div className="w-screen bg-gradient-to-b from-teal-700 to-teal-500 h-auto mx-auto p-4  ">
       <header className="text-3xl font-bold underline mt-5 pt-5 mb-10 text-center">
         Client Review
       </header>
