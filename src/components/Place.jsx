@@ -28,7 +28,7 @@ const Destination = () => {
   return (
     <div className="relative w-full h-screen" id="Destination">
       <img src={bgcover} alt="Background" className="w-full h-full object-cover blur-sm absolute -z-10" />
-      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+      <div className="relative top-0 left-0 w-full h-full flex items-center justify-center">
         <Carousel
           autoPlay={true}
           showThumbs={false}
@@ -36,6 +36,7 @@ const Destination = () => {
           interval={3000}
           infiniteLoop={true}
           className="w-full"
+          style={{touchAction:'none'}}
         >
           {slides.map((slide, index) => (
             <div key={index} className="flex items-center justify-between sm:text-xl h-screen px-10">
