@@ -39,7 +39,7 @@ const Destination = () => {
          
         >
           {slides.map((slide, index) => (
-            <div key={index} className="flex items-center justify-between sm:text-xl h-screen px-10">
+            <div key={index} className="flex items-center justify-between sm:text-xl h-full overflow-scroll px-10">
               <div className="text-teal w-2/3">
                 <h1 className="text-4xl font-bold text-black">{slide.heading}</h1>
                 <p className="m-2 text-sm md:text-lg sm:text-center text-black text-bold bg-teal-400 bg-opacity-25 backdrop-blur-md">{slide.description}</p>
