@@ -24,9 +24,9 @@ const slides = [
   { image: Edinburgh, heading: 'Edinburgh', description: 'Edinburgh, Scotland\'s capital, is a charming city steeped in history and culture. The picturesque Old Town, with its medieval architecture and famous Royal Mile, contrasts with the elegant Georgian New Town. Edinburgh Castle, perched atop a dormant volcano, overlooks the city, while the arts and festivals thrive in this vibrant, cosmopolitan hub.' },
 ];
 
-const Destinations = () => {
+const Destination = () => {
   return (
-    <div className="relative w-full overflow-y-auto" id="Destination">
+    <div className="relative w-full h-screen" id="Destination">
       <img src={bgcover} alt="Background" className="w-full h-full object-cover blur-sm absolute -z-10" />
       <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
         <Carousel
@@ -38,7 +38,7 @@ const Destinations = () => {
           className="w-full"
         >
           {slides.map((slide, index) => (
-            <div key={index} className="flex flex-col items-center justify-between sm:text-xl px-10 py-20">
+            <div key={index} className="flex items-center justify-between sm:text-xl h-screen px-10">
               <div className="text-teal w-2/3">
                 <h1 className="text-4xl font-bold text-black">{slide.heading}</h1>
                 <p className="m-2 text-sm md:text-lg sm:text-center text-black text-bold bg-teal-400 bg-opacity-25 backdrop-blur-md">{slide.description}</p>
@@ -46,8 +46,8 @@ const Destinations = () => {
                   <button className="mt-3 px-4 py-2 bg-teal-700 text-white rounded-lg border-2 hover:bg-teal-600 hover:scale-105 duration-200 cursor-pointer">Book Now</button>
                 </Link>
               </div>
-              <div className="w-1/3 mt-4">
-                <img src={slide.image} alt={slide.heading} className="rounded-lg shadow-lg" />
+              <div className="w-1/3">
+                <img src={slide.image} alt={slide.heading} className="rounded-lg h-sm shadow-lg" />
               </div>
             </div>
           ))}
@@ -57,4 +57,4 @@ const Destinations = () => {
   );
 };
 
-export default Destinations;
+export default Destination
