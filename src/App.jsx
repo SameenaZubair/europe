@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import Destination from './components/Destination';
+import Destinations from './components/Destinations';
 import About from './components/About';
 import Services from './components/Services';
 import Reviews from './components/Reviews';
@@ -16,7 +16,7 @@ return (
         <Navbar  />
         <Home />
         <About/>
-        <Destination />
+        <Destinations/>
         <Services/>
         <Reviews/>
         <Book/>
