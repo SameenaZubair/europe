@@ -24,7 +24,7 @@ const slides = [
   { image: Edinburgh, heading: 'Edinburgh', description: 'Edinburgh, Scotland\'s capital, is a charming city steeped in history and culture. The picturesque Old Town, with its medieval architecture and famous Royal Mile, contrasts with the elegant Georgian New Town. Edinburgh Castle, perched atop a dormant volcano, overlooks the city, while the arts and festivals thrive in this vibrant, cosmopolitan hub.' },
 ];
 
-const Destination = () => {
+const Destinations = () => {
   return (
     <div className="relative w-full overflow-y-auto" id="Destination">
       <img src={bgcover} alt="Background" className="w-full h-full object-cover blur-sm absolute -z-10" />
@@ -57,4 +57,4 @@ const Destination = () => {
   );
 };
 
-export default Destination;
+export default Destinations;

@@ -5,8 +5,9 @@ import Destinations from './components/Destinations';
 import About from './components/About';
 import Services from './components/Services';
 import Reviews from './components/Reviews';
-import Footer from './components/Footer';
 import Book from './components/Book';
+import Footer from './components/Footer';
+
 
 
 function App() {
